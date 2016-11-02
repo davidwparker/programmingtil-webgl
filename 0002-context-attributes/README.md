@@ -46,5 +46,5 @@ console.log(gl) attributes:
   * the actual height of the drawing buffer, which may differ from the with attribute of the HTMLCanvasElement if the implementation is unable to satisfy the requested width or height
 
 RESOURCES:
-https://github.com/davidwparker/programmingtil-webgl
+https://github.com/davidwparker/programmingtil-webgl/tree/master/0002-context-attributes
 https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.2
