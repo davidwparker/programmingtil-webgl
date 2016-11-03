@@ -9,8 +9,7 @@
       var contexts = ["webgl", "experimental-webgl", "webkit-3d", "moz-webgl"], gl;
       for (var i=0; i < contexts.length; i++) {
         try {
-          // gl = canvas.getContext(contexts[i]);
-          gl = canvas.getContext(contexts[i], { stencil: true });
+          gl = canvas.getContext(contexts[i]);
         } catch(e) {}
         if (gl) {
           break;
@@ -25,5 +24,4 @@
 
   // Expose glUtils globally
   global.glUtils = glUtils;
-
 }(window || this));
