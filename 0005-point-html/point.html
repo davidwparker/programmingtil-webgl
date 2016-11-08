@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shaders in HTML</title>
+    <meta name="author" content="David W Parker">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+
+  <body>
+    <canvas id="glcanvas" width="640" height="480">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+
+    <!--
+    Vertex shader program
+    The vertex shader must set gl_Position with a vec4.
+    -->
+    <script name="shader" data-type="vertex" data-version="v1" type="x-shader">
+      void main() {
+        gl_Position = vec4(0.0, 0.0, 0.0, 1.0);
+        gl_PointSize = 10.0;
+      }
+    </script>
+
+    <!--
+    Fragment shader program
+    The fragment shader must set gl_FragColor with a vec4.
+    This can be a varying vColor, as set by the vertex shader
+    -->
+    <script name="shader" data-type="fragment" data-version="v1" type="x-shader">
+      void main() {
+        gl_FragColor = vec4(1.0, 1.0, 0.0, 1.0);
+      }
+    </script>
+
+    <!-- Library: our common library -->
+    <script type="text/javascript" src="libs/glUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="point.js"></script>
+  </body>
+</html>
