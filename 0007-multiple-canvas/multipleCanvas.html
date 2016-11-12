@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Canvas objects</title>
+    <meta name="author" content="David W Parker">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+
+  <body>
+    <canvas id="glcanvas1" width="320" height="240">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+    <canvas id="glcanvas2" width="320" height="240">
+    </canvas>
+    <br>
+    <canvas id="glcanvas3" width="320" height="240">
+    </canvas>
+    <canvas id="glcanvas4" width="320" height="240">
+    </canvas>
+
+    <!-- Library: our common library -->
+    <script type="text/javascript" src="libs/glUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="multipleCanvas.js"></script>
+  </body>
+</html>
