@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fullscreen Canvas</title>
+    <meta name="author" content="David W Parker">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <button onclick="fullscreen()">full screen</button>
+    <canvas id="glcanvas">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+
+    <!-- Library: our common library -->
+    <script type="text/javascript" src="libs/glUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="fullScreen.js"></script>
+  </body>
+</html>
