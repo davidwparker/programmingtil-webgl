@@ -1,4 +1,5 @@
-STARTING OFF:
+## STARTING OFF:
+
 Make sure you have npm installed.
 Run:
 ```
@@ -12,9 +13,11 @@ http-server
 
 View at: http://localhost:8080/
 
-CONCEPTS:
+## CONCEPTS:
+
 * canvas object, check if webgl present
 * API: getContext, clearColor, clear, COLOR_BUFFER_BIT
 
-GITHUB:
+## GITHUB:
+
 https://github.com/davidwparker/programmingtil-webgl

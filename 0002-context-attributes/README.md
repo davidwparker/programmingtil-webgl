@@ -1,4 +1,5 @@
-STARTING OFF:
+## STARTING OFF:
+
 Make sure you have npm installed.
 Run:
 ```
@@ -12,10 +13,12 @@ http-server
 
 View at: http://localhost:8080/
 
-CONCEPTS:
+## CONCEPTS:
+
 * API: getContextAttributes
 
-Attributes:
+## Attributes:
+
 * alpha
   * If the value is true, the drawing buffer has an alpha channel for the purposes of performing OpenGL destination alpha operations and compositing with the page. If the value is false, no alpha buffer is available.
 * depth
@@ -37,7 +40,8 @@ Attributes:
   * An implementation might require reading back the framebuffer from GPU memory to system memory before compositing it with the rest of the page, significantly reducing performance.
   * Applications that don't require high performance should leave this parameter at its default value of false. Applications that require high performance may set this parameter to true, and if context creation fails then the application may prefer to use a fallback rendering path such as a 2D canvas context. Alternatively the application can retry WebGL context creation with this parameter set to false, with the knowledge that a reduced-fidelity rendering mode should be used to improve performance.
 
-console.log(gl) attributes:
+## console.log(gl) attributes:
+
 * canvas:
   * a reference to the canvas element which created this context
 * drawingBufferWidth:
@@ -45,6 +49,7 @@ console.log(gl) attributes:
 * drawingBufferHeight:
   * the actual height of the drawing buffer, which may differ from the with attribute of the HTMLCanvasElement if the implementation is unable to satisfy the requested width or height
 
-RESOURCES:
+## RESOURCES:
+
 https://github.com/davidwparker/programmingtil-webgl/tree/master/0002-context-attributes
 https://www.khronos.org/registry/webgl/specs/latest/1.0/#5.2
