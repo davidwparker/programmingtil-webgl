@@ -16,6 +16,7 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Drawing Points
+* uiUtils.js
 
 ## RESOURCES:
 

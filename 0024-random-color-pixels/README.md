@@ -16,7 +16,7 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Drawing Points with random colors
-* Uniforms
+* uniform vec4 u_FragColor;
 * gl.getUniformLocation
 * gl.uniform4f
 

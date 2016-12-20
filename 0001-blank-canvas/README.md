@@ -11,7 +11,7 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/blank and http://localhost:8080/blank-lib
 
 ## CONCEPTS:
 

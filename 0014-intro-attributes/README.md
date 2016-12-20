@@ -17,6 +17,13 @@ View at: http://localhost:8080/
 
 Introduction to Attributes
 
+* API
+  * shaders
+    * gl_Position
+    * attribute vec4
+  * gl
+    * vertexAttrib3f
+
 ## RESOURCES:
 
 * https://github.com/davidwparker/programmingtil-webgl/tree/master/0014-intro-attributes

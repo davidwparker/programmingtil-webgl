@@ -15,7 +15,7 @@ View at: http://localhost:8080/
 
 ## CONCEPTS:
 
-* Full Screen
+* Full Screen using CSS styles
 
 ## RESOURCES:
 

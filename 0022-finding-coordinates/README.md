@@ -16,6 +16,8 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Finding Coordinates
+* API: gl > vertexAttrib3f
+* mouse events: clientX, clientY, target.getBoundingClientRect();
 
 ## RESOURCES:
 

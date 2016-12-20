@@ -16,7 +16,18 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Drawing a line
-* API: gl.LINES
+* API
+  * Type Array Float32Array
+  * gl
+    * createBuffer
+    * bindBuffer
+    * bufferData
+    * vertexAttribPointer
+    * enableVertexAttribArray
+    * LINES
+    * ARRAY_BUFFER
+    * STATIC_DRAW
+    * FLOAT
 
 ## RESOURCES:
 

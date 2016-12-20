@@ -15,7 +15,7 @@ View at: http://localhost:8080/
 
 ## CONCEPTS:
 
-* Resizing a square canvas
+* Resizing a square canvas with a 1:1 aspect ratio
 
 ## RESOURCES:
 

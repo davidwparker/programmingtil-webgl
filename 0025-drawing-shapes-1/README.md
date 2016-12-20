@@ -16,6 +16,7 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Drawing Shapes
+  * dynamically drawing lines, triangles based on mouse input
 
 ## RESOURCES:
 

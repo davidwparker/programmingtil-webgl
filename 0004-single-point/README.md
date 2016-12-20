@@ -45,6 +45,10 @@ View at: http://localhost:8080/
   * getShaderParameter
   * getShaderInfoLog
   * useProgram
+* Shaders
+  * gl_Position
+  * gl_PointSize
+  * gl_FragColor
 
 ## RESOURCES:
 

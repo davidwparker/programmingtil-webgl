@@ -16,6 +16,8 @@ View at: http://localhost:8080/
 ## CONCEPTS:
 
 * Resize canvas
+* API: gl > viewport
+* window.addEventListener('resize')
 
 ## RESOURCES:
 
