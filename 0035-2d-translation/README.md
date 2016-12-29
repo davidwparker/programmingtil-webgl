@@ -27,5 +27,5 @@ Reminder:
 
 ## RESOURCES:
 
-* https://github.com/davidwparker/programmingtil-webgl/tree/master/0034-reading-pixels-2
+* https://github.com/davidwparker/programmingtil-webgl/tree/master/0035-2d-translation
 * http://www.lighthouse3d.com/tutorials/glsl-tutorial/data-types-and-variables/
