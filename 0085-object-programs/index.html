@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects with own programs</title>
+    <meta name="author" content="David W Parker">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <canvas id="glcanvas" height="480" width="480">
+      Your browser doesn't appear to support the HTML5 <code>&lt;canvas&gt;</code> element.
+    </canvas>
+
+    <div style="padding: 15px; display:none;">
+      <strong>Equation<strong><br />
+      <select id="equation" onchange="updateBlend();">
+        <option selected>FUNC_ADD</option>
+        <option>FUNC_SUBTRACT</option>
+        <option>FUNC_REVERSE_SUBTRACT</option>
+      </select>
+      <br />
+      <strong>Source</strong><br />
+      <select id="source" onchange="updateBlend();">
+        <option>ZERO</option>
+        <option>ONE</option>
+        <option>SRC_COLOR</option>
+        <option>ONE_MINUS_SRC_COLOR</option>
+        <option>DST_COLOR</option>
+        <option>ONE_MINUS_DST_COLOR</option>
+        <option selected>SRC_ALPHA</option>
+        <option>ONE_MINUS_SRC_ALPHA</option>
+        <option>DST_ALPHA</option>
+        <option>ONE_MINUS_DST_ALPHA</option>
+        <option>SRC_ALPHA_SATURATE</option>
+        <option>CONSTANT_COLOR</option>
+        <option>ONE_MINUS_CONSTANT_COLOR</option>
+        <option>CONSTANT_ALPHA</option>
+        <option>ONE_MINUS_CONSTANT_ALPHA</option>
+      </select>
+      <br />
+      <strong>Destination<strong><br />
+      <select id="destination" onchange="updateBlend();">
+        <option>ZERO</option>
+        <option>ONE</option>
+        <option>SRC_COLOR</option>
+        <option>ONE_MINUS_SRC_COLOR</option>
+        <option>DST_COLOR</option>
+        <option>ONE_MINUS_DST_COLOR</option>
+        <option>SRC_ALPHA</option>
+        <option selected>ONE_MINUS_SRC_ALPHA</option>
+        <option>DST_ALPHA</option>
+        <option>ONE_MINUS_DST_ALPHA</option>
+        <option>SRC_ALPHA_SATURATE</option>
+        <option>CONSTANT_COLOR</option>
+        <option>ONE_MINUS_CONSTANT_COLOR</option>
+        <option>CONSTANT_ALPHA</option>
+        <option>ONE_MINUS_CONSTANT_ALPHA</option>
+      </select>
+    </div>
+
+    <!-- Shaders -->
+    <script name="shader" data-src="shaders/vertex.glsl" data-type="vertex" data-version="v1"></script>
+    <script name="shader" data-src="shaders/fragment.glsl" data-type="fragment" data-version="v1"></script>
+    <script name="shader" data-src="shaders/vertex2.glsl" data-type="vertex" data-version="v2"></script>
+    <script name="shader" data-src="shaders/fragment2.glsl" data-type="fragment" data-version="v2"></script>
+    <script name="shader" data-src="shaders/vertex3.glsl" data-type="vertex" data-version="v3"></script>
+    <script name="shader" data-src="shaders/fragment3.glsl" data-type="fragment" data-version="v3"></script>
+
+    <!-- Library: Signals processing used for dispatching methods -->
+    <script type="text/javascript" src="vendor/signals.js"></script>
+    <script type="text/javascript" src="vendor/glMatrix.js"></script>
+
+    <!-- Library: our common libraries -->
+    <script type="text/javascript" src="libs/glUtils.js"></script>
+    <script type="text/javascript" src="libs/saKnife.js"></script>
+    <script type="text/javascript" src="libs/uiUtils.js"></script>
+
+    <!-- This is the bulk of the actual WebGL stuff -->
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
