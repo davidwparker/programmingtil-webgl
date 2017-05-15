@@ -333,7 +333,7 @@
           read: state.programs.read,
         },
         selColor:[255,255,0,0],
-        translate:[3,0,0]
+        translate:[3,0,0],
       }),
       new Cube({
         gl: state.gl,
