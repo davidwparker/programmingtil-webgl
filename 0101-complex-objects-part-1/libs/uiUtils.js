@@ -15,12 +15,10 @@
       );
     },
     pickObject: function(pixels, objects, key) {
-      console.log(key);
       pixels = pixels.map(function(n) {
         return n / 255;
       });
       return objects.find(function(obj) {
-        console.log(key, obj, obj[key]);
         return (
           pixels.length == obj[key].length &&
           pixels.every(function(v, i) {
