@@ -13,11 +13,12 @@ http-server
 
 View at: http://localhost:8080/0101-complex-objects-part-1
 
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * Complex objects part 1: introduction
-* NOTE: moved vendor and images out of folder.
-  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 

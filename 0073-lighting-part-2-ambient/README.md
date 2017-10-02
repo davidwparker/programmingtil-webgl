@@ -11,7 +11,10 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/0073-lighting-part-2-ambient
+
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
 
 ## CONCEPTS:
 

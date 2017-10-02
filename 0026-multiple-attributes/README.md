@@ -13,6 +13,9 @@ http-server
 
 View at: http://localhost:8080/
 
+* NOTE: moved signals out of libs folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * API: gl > disableVertexAttribArray
