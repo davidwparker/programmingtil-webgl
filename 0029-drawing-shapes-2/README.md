@@ -13,6 +13,9 @@ http-server
 
 View at: http://localhost:8080/
 
+* NOTE: moved signals out of libs folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * dynamically assigning attributes, uniforms, and varyings to JS objects, in order to dynamically bind them
