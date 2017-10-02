@@ -11,7 +11,10 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/0045-multiattributes
+
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
 
 ## CONCEPTS:
 
@@ -21,4 +24,4 @@ View at: http://localhost:8080/
 
 ## RESOURCES:
 
-* https://github.com/davidwparker/programmingtil-webgl/tree/master/0044-multiattributes
+* https://github.com/davidwparker/programmingtil-webgl/tree/master/0045-multiattributes
