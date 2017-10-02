@@ -11,11 +11,13 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/0100-reorganize-code
 
 ## CONCEPTS:
 
 * Reorganizing code
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 

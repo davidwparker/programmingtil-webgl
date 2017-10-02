@@ -11,7 +11,7 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/0091-framebuffer-part-2
 
 ## CONCEPTS:
 
@@ -20,6 +20,8 @@ View at: http://localhost:8080/
 * Use a framebuffer as a texture image.
   * "Offscreen drawing"
 * FBO (Framebuffer Objects) have attachments (color, depth, stencil), like the depth and stencil buffers.
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
 
 #### RenderBuffers
 * general purpose drawing area

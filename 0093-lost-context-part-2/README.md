@@ -11,12 +11,14 @@ Run:
 http-server
 ```
 
-View at: http://localhost:8080/
+View at: http://localhost:8080/0093-lost-context-part-2
 
 ## CONCEPTS:
 
 #### Lost Context
 * When the GPU is using too many resources (perhaps another tab is using the GPU as well), and the browser frees up resources to regain control.
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 
