@@ -13,6 +13,9 @@ http-server
 
 View at: http://localhost:8080/
 
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * Intro to 3d: LookAt function
