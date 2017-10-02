@@ -13,11 +13,12 @@ http-server
 
 View at: http://localhost:8080/0098-text-part-5-atlas
 
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * Text using atlas, part 1
-* NOTE: moved vendor and images out of folder.
-  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 

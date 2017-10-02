@@ -13,6 +13,9 @@ http-server
 
 View at: http://localhost:8080/0092-lost-context-part-1
 
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 #### Lost Context
@@ -20,8 +23,6 @@ View at: http://localhost:8080/0092-lost-context-part-1
 * gl.isContextLost()
 * gl.getExtension('WEBGL_lose_context').loseContext()
 * gl.getExtension('WEBGL_lose_context').restoreContext()
-* NOTE: moved vendor and images out of folder.
-  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 

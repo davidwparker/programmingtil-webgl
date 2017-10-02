@@ -13,11 +13,12 @@ http-server
 
 View at: http://localhost:8080/0095-specular-lighting
 
+* NOTE: moved vendor and images out of folder.
+  * Running from main directory instead inside this directory.
+
 ## CONCEPTS:
 
 * Specular Lighting
-* NOTE: moved vendor and images out of folder.
-  * Running from main directory instead inside this directory.
 
 ## RESOURCES:
 
