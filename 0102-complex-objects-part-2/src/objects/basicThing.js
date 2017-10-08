@@ -10,62 +10,16 @@ function BasicThing(opts) {
   this.opts = opts;
   this.gl = opts.gl;
   this.programs = opts.programs;
-
-  // Vextex positions
-  this.attributes = {
-    aSelColor: {
-      size: 4,
-      offset: 0,
-      bufferData: undefined
-    }
-  };
-  this.indices = new Uint8Array([
-    0,
-    1,
-    2,
-    0,
-    2,
-    3, // f
-    4,
-    5,
-    6,
-    4,
-    6,
-    7, // r
-    8,
-    9,
-    10,
-    8,
-    10,
-    11, // u
-    12,
-    13,
-    14,
-    12,
-    14,
-    15, // l
-    16,
-    17,
-    18,
-    16,
-    18,
-    19, // d
-    20,
-    21,
-    22,
-    20,
-    22,
-    23 // b
-  ]);
   this.components = [
     new Cube({
       blend: false,
       gl: state.gl,
       programs: {
-        render: state.programs.render,
+        render: state.programs.texture,
         read: state.programs.read
       },
-      selColor: [255, 254, 0, 0]
+      selColor: opts.selColor
+      // texture: 'crate'
     }),
     new Cube({
       blend: false,
@@ -74,9 +28,8 @@ function BasicThing(opts) {
         render: state.programs.render,
         read: state.programs.read
       },
-      selColor: [255, 254, 0, 0],
-      // translate: [0, 2.0, 0],
-      // angle: [0, 45, 0],
+      selColor: opts.selColor,
+      // angle: [45, 0, 0],
       translate: [0, 2.5, 0]
     })
   ];
@@ -84,9 +37,17 @@ function BasicThing(opts) {
   // Functionality
   this.readState = function() {
     this.state.renderMode = 'read';
+    this.components.forEach(function(comp) {
+      comp.readState();
+    });
+    renderer.draw();
   };
   this.drawState = function() {
     this.state.renderMode = 'render';
+    this.components.forEach(function(comp) {
+      comp.drawState();
+    });
+    renderer.draw();
   };
 
   this.draw = function() {
@@ -141,15 +102,20 @@ function BasicThing(opts) {
       if (this.components[i].opts.scale) {
         mat4.scale(mm, mm, this.components[i].opts.scale);
       }
-      if (
-        this.components[i].state.angle[0] ||
-        this.components[i].state.angle[1] ||
-        this.components[i].state.angle[2]
-      ) {
-        mat4.rotateX(mm, mm, this.components[i].state.angle[0]);
-        mat4.rotateY(mm, mm, this.components[i].state.angle[1]);
-        mat4.rotateZ(mm, mm, this.components[i].state.angle[2]);
+      if (this.state.angle[0] || this.state.angle[1] || this.state.angle[2]) {
+        mat4.rotateX(mm, mm, this.state.angle[0]);
+        mat4.rotateY(mm, mm, this.state.angle[1]);
+        mat4.rotateZ(mm, mm, this.state.angle[2]);
       }
+      // if (
+      //   this.components[i].state.angle[0] ||
+      //   this.components[i].state.angle[1] ||
+      //   this.components[i].state.angle[2]
+      // ) {
+      //   mat4.rotateX(mm, mm, this.components[i].state.angle[0]);
+      //   mat4.rotateY(mm, mm, this.components[i].state.angle[1]);
+      //   mat4.rotateZ(mm, mm, this.components[i].state.angle[2]);
+      // }
       this.gl.uniformMatrix4fv(uModelMatrix, false, mm);
 
       // MVP matrix
@@ -230,8 +196,11 @@ function BasicThing(opts) {
 
   // Initialization
   this.init = (function(_this) {
-    // var selColor = opts.selColor ? opts.selColor : [0,0,0,0];
-    // _this.selColor = selColor.map(function(n) { return n/255; });
+    var selColor = opts.selColor ? opts.selColor : [0, 0, 0, 0];
+    _this.selColor = selColor.map(function(n) {
+      return n / 255;
+    });
+
     _this.state = {
       angle: opts.angle ? opts.angle : [0, 0, 0],
       blendEquation: opts.blendEquation
