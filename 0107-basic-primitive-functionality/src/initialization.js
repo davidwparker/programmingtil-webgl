@@ -58,9 +58,7 @@
         },
         selColor: [1, 0, 0, 0]
       }),
-      new Plane({
-        blend: true,
-        blendDst: state.gl.ONE,
+      new Cube({
         gl: state.gl,
         programs: {
           render: state.programs.texture,
@@ -68,8 +66,7 @@
         },
         selColor: [2, 0, 0, 0],
         texture: 'stainglass',
-        translate: [-2.5, 0, 0],
-        angle: [-45, 0, 0]
+        translate: [-2, 0, 0]
       })
     ];
   }
