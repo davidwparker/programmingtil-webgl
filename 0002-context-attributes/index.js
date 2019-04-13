@@ -6,7 +6,7 @@
   console.log(gl.getContextAttributes());
   console.log(gl);
 
-  // Clear to black
+  // Clear to red
   gl.clearColor(1.0, 0.0, 0.0, 1.0);
 
   // Clear canvas
