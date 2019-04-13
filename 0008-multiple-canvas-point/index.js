@@ -13,16 +13,15 @@
         gl3 = glUtils.checkWebGL(canvas3),
         gl4 = glUtils.checkWebGL(canvas4);
 
-    // Initialize the shaders
-        // Initialize the shaders and program
+    // Initialize the shaders and program
     var vertexShader1 = glUtils.getShader(gl1, gl1.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
-        vertexShader2 = glUtils.getShader(gl2, gl1.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
-        vertexShader3 = glUtils.getShader(gl3, gl1.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
-        vertexShader4 = glUtils.getShader(gl4, gl1.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
+        vertexShader2 = glUtils.getShader(gl2, gl2.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
+        vertexShader3 = glUtils.getShader(gl3, gl3.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
+        vertexShader4 = glUtils.getShader(gl4, gl4.VERTEX_SHADER, glUtils.SL.Shaders.v1.vertex),
         fragmentShader1 = glUtils.getShader(gl1, gl1.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
-        fragmentShader2 = glUtils.getShader(gl2, gl1.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
-        fragmentShader3 = glUtils.getShader(gl3, gl1.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
-        fragmentShader4 = glUtils.getShader(gl4, gl1.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
+        fragmentShader2 = glUtils.getShader(gl2, gl2.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
+        fragmentShader3 = glUtils.getShader(gl3, gl3.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
+        fragmentShader4 = glUtils.getShader(gl4, gl4.FRAGMENT_SHADER, glUtils.SL.Shaders.v1.fragment),
         program1 = glUtils.createProgram(gl1, vertexShader1, fragmentShader1),
         program2 = glUtils.createProgram(gl2, vertexShader2, fragmentShader2),
         program3 = glUtils.createProgram(gl3, vertexShader3, fragmentShader3),
